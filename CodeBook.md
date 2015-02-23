@@ -1,4 +1,4 @@
-Getting and Cleaning Data Course Project CodeBook
+##Getting and Cleaning Data Course Project CodeBook
 
 This file describes variables, the data, and work that I have performed to tidy up the data.
     
@@ -10,7 +10,7 @@ The data for the project:
     
 The run_analysis.R script performs the following steps to clean the data:
         
-Read X_train.txt, y_train.txt and subject_train.txt from the default directory to which it has been in set in R to stores them as merged datasets in X_Data, Y_Data and S_Data respectively.
+Read X_train.txt, Y_train.txt and subject_train.txt from the default directory to which it has been in set in R to stores them as merged datasets in X_Data, Y_Data and S_Data S noted in Step 1.
         
 Read the features.txt file from default directory to which it has been set to in R and stores the data in a variable called features. We only extract the measurements on the mean and standard deviation. We get a subset of X_Data with the corresponding columns.
         
