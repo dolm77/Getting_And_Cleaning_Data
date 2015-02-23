@@ -1,14 +1,17 @@
 #Step1. Merges the training and the test sets to create one data set.
+#Read and combine data into dataframes
 X_train <- read.table("X_train.txt")
 X_test <- read.table("X_test.txt")
 X_Data <- rbind(X_train, X_test)
 dim(X_Data)
 
+#Read and combine data into dataframes
 Y_train <- read.table("y_train.txt")
 Y_test <- read.table("y_test.txt")
 Y_Data <- rbind(Y_train, Y_test)
 dim(Y_Data)  
 
+#Read and combine data into dataframes
 S_train <- read.table("subject_train.txt")
 S_test <- read.table("subject_test.txt")
 S_Data <- rbind(S_train, S_test)
@@ -18,6 +21,8 @@ dim(S_Data)
 # deviation for each measurement.
 features <- read.table("features.txt")
 dim(features)  
+
+#Create an integer vector of index of the good features dataframe 
 Mean_Std_Indices <- grep("mean\\(\\)|std\\(\\)", features[, 2])
 length(Mean_Std_Indices) # 66
 X_Data <-X_Data[, Mean_Std_Indices]
