@@ -1,3 +1,4 @@
+#Step1. Merges the training and the test sets to create one data set.
 X_train <- read.table("X_train.txt")
 X_test <- read.table("X_test.txt")
 X_Data <- rbind(X_train, X_test)
