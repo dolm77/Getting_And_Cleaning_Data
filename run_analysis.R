@@ -68,5 +68,4 @@ for(i in 1:subjectLen) {
     row <- row + 1
   }
 }
-head(result)
-write.table(result, "Data_With_Means.txt") # write out the 2nd dataset
+write.table(result, "Data_With_Means.txt") # 2nd dataset
