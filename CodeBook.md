@@ -1,4 +1,6 @@
-##Getting and Cleaning Data Course Project CodeBook
+##Getting and Cleaning Data Course 
+
+#Project CodeBook
 
 This file describes variables, the data, and work that I have performed to tidy up the data.
     
